@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            marginright:20px
+        }
+    
+        /* Set a maximum width for the form */
+        form {
+            width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        /* Style the form labels */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 500px;
+        
+        }
+    
+        /* Style the form input fields */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+    
+        /* Style the form submit button */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: #0062cc;
+        }
+    
+        /* Make the form responsive */
+        @media only screen and (max-width: 600px) {
+            form {
+                max-width: 100%;
+            }
+        }
+    </style>
+    
+    <body>
+        <h1>New Applicants</h1>
+        <div class='container'>
+    <form method="POST" action="/add_appointments">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="Email">Email</label>
+        <input type="text" id="Email" name="Email"><br>
+
+        <label for="date">Date</label>
+        <input type="text" id="date" name="date"><br>
+
+        <label for="note">Note</label>
+        <input type="text" id="note" name="note"><br>
+
+        <input type="submit" value="Save">
+    </form>
+        <div>
+        <script src="" async defer></script>
+    </body>
+</html>
